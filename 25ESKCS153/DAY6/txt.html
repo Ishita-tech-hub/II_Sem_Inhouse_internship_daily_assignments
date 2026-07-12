@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Tech Event 2026</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fb;
+}
+
+.hero{
+
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.7)),
+url("https://images.unsplash.com/photo-1511578314322-379afb476865?w=1600");
+
+background-size:cover;
+background-position:center;
+
+height:100vh;
+
+display:flex;
+align-items:center;
+color:white;
+
+}
+
+.navbar{
+background:#0d6efd;
+}
+
+.navbar-brand{
+font-weight:bold;
+font-size:25px;
+}
+
+.hero h1{
+font-size:55px;
+font-weight:700;
+}
+
+.hero p{
+font-size:20px;
+margin:20px 0;
+}
+
+.btn-register{
+
+background:#ffc107;
+color:black;
+font-weight:bold;
+padding:12px 30px;
+border-radius:30px;
+transition:.3s;
+
+}
+
+.btn-register:hover{
+
+transform:translateY(-3px);
+
+background:white;
+
+}
+
+.section-title{
+
+font-size:40px;
+font-weight:700;
+margin-bottom:20px;
+color:#0d6efd;
+
+}
+
+.card-box{
+
+background:white;
+padding:30px;
+
+border-radius:15px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+transition:.4s;
+
+height:100%;
+
+}
+
+.card-box:hover{
+
+transform:translateY(-8px);
+
+}
+
+.countdown{
+
+font-size:35px;
+
+font-weight:bold;
+
+color:#ffc107;
+
+}
+
+.register{
+
+background:
+
+linear-gradient(135deg,#0d6efd,#6610f2);
+
+padding:70px 0;
+
+color:white;
+
+}
+
+.form-control,
+.form-select{
+
+margin-bottom:15px;
+
+}
+
+footer{
+
+background:#111;
+
+color:white;
+
+padding:20px;
+
+text-align:center;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+<div class="container">
+
+<a class="navbar-brand" href="#">TechFest 2026</a>
+
+<button class="navbar-toggler"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse"
+id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#about">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#register">Register</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-7">
+
+<h1>TechFest 2026</h1>
+
+<p>
+
+Join India's biggest Web Development Event.
+
+Learn from experts, network with developers,
+win exciting prizes and receive certificates.
+
+</p>
+
+<h3>📅 10 July 2026</h3>
+
+<div class="countdown my-4">
+
+<span id="days">00</span>d :
+
+<span id="hours">00</span>h :
+
+<span id="minutes">00</span>m :
+
+<span id="seconds">00</span>s
+
+</div>
+
+<a href="#register" class="btn btn-register">
+
+Register Now
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="py-5" id="about">
+
+<div class="container">
+
+<h2 class="text-center section-title">
+
+Why Attend?
+
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="card-box text-center">
+
+<h3>🎯</h3>
+
+<h4>Workshops</h4>
+
+<p>
+
+Hands-on HTML, CSS,
+JavaScript and React sessions.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card-box text-center">
+
+<h3>🏆</h3>
+
+<h4>Certificates</h4>
+
+<p>
+
+Receive participation and
+achievement certificates.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card-box text-center">
+
+<h3>🤝</h3>
+
+<h4>Networking</h4>
+
+<p>
+
+Meet industry experts
+and fellow developers.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="register" id="register">
+
+<div class="container">
+
+<h2 class="text-center mb-5">
+
+Event Registration
+
+</h2>
+
+<div class="row justify-content-center">
+
+<div class="col-lg-8">
+
+<form id="myForm">
+
+<input
+type="text"
+class="form-control"
+placeholder="Full Name"
+required>
+
+<input
+type="email"
+class="form-control"
+placeholder="Email"
+required>
+
+<input
+type="tel"
+class="form-control"
+placeholder="Phone Number"
+required>
+
+<input
+type="text"
+class="form-control"
+placeholder="College Name">
+
+<select class="form-select">
+
+<option>Choose Branch</option>
+
+<option>Computer Science</option>
+
+<option>Information Technology</option>
+
+<option>Electronics</option>
+
+<option>Mechanical</option>
+
+</select>
+
+<select class="form-select">
+
+<option>Year</option>
+
+<option>1st Year</option>
+
+<option>2nd Year</option>
+
+<option>3rd Year</option>
+
+<option>4th Year</option>
+
+</select>
+            <select class="form-select">
+
+                <option>Select Gender</option>
+
+                <option>Male</option>
+
+                <option>Female</option>
+
+                <option>Other</option>
+
+            </select>
+
+            <textarea class="form-control" rows="4"
+                placeholder="Why do you want to attend?"></textarea>
+
+            <div class="form-check mb-3">
+
+                <input class="form-check-input" type="checkbox" id="agree" required>
+
+                <label class="form-check-label" for="agree">
+
+                    I agree to the Terms & Conditions
+
+                </label>
+
+            </div>
+
+            <button class="btn btn-warning w-100 btn-lg">
+
+                Register Now
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+    <h5>TechFest 2026</h5>
+
+    <p>
+
+        📍 Jaipur, Rajasthan |
+
+        📧 techfest@gmail.com |
+
+        📞 +91 9876543210
+
+    </p>
+
+    <p>
+
+        © 2026 All Rights Reserved
+
+    </p>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+var eventDate = new Date("July 10, 2026 09:00:00").getTime();
+
+setInterval(function(){
+
+var now = new Date().getTime();
+
+var distance = eventDate - now;
+
+var days = Math.floor(distance/(1000*60*60*24));
+
+var hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+
+var minutes = Math.floor((distance%(1000*60*60))/(1000*60));
+
+var seconds = Math.floor((distance%(1000*60))/1000);
+
+$("#days").text(days);
+
+$("#hours").text(hours);
+
+$("#minutes").text(minutes);
+
+$("#seconds").text(seconds);
+
+},1000);
+
+$("#myForm").submit(function(e){
+
+e.preventDefault();
+
+alert("🎉 Registration Successful! See you on 10 July.");
+
+this.reset();
+
+});
+
+$(".nav-link").click(function(){
+
+$("html,body").animate({
+
+scrollTop:$($(this).attr("href")).offset().top-70
+
+},800);
+
+});
+
+</script>
+
+</body>
+
+</html>
